@@ -1,7 +1,7 @@
 import cron from "cron";
 import https from "https";
 
-const URL = "https://threads-clone-9if3.onrender.com";
+const URL = "https://threads-application-au35.onrender.com";
 
 const getRequest = () => {
   https
@@ -17,9 +17,7 @@ const getRequest = () => {
     });
 };
 
-const job = new cron.CronJob("*/1 * * * *", () => {
-  console.log("A cron job job typeshit!");
-});
+const job = new cron.CronJob("*/14 * * * *", getRequest);
 
 export default job;
 
