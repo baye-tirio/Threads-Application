@@ -150,7 +150,7 @@ export default function ChatPage() {
   if (loadingChatPage)
     return (
       <Center p={5}>
-        <Spinner size={30} />{" "}
+        <Spinner size="xl" />{" "}
       </Center>
     );
   return (
@@ -194,7 +194,7 @@ export default function ChatPage() {
           mx={"auto"}
           height={"90vh"}
           overflowY={"auto"}
-         // border={"solid yellow 2px"}
+          // border={"solid yellow 2px"}
         >
           <Text
             fontWeight={700}
@@ -252,7 +252,7 @@ export default function ChatPage() {
             alignItems={"center"}
             justifyContent={"center"}
             //border={"solid blue 2px"}
-            height= {"90vh"}
+            height={"90vh"}
           >
             <BiConversation size={70} />
             <Text fontSize={20}> Select a conversation to start messaging</Text>
