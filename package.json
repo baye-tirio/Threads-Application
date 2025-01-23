@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "  NODE_ENV=development  nodemon ./server/src/index.mjs",
     "start": " NODE_ENV=production  node ./server/src/index.mjs",
-    "build": "npm install && npm install --prefix client && npm run build --prefix client"
+    "build": "npm install && npm install --prefix client --production=false && npm run build --prefix client"
   },
   "keywords": [],
   "author": "",
