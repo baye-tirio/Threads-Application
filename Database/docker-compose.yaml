@@ -1,0 +1,9 @@
+services:
+  mongodb:
+    image: mongodb/mongodb-community-server
+    ports:
+      - 27030:27017
+    volumes:
+      - threads-database:/data/db
+volumes:
+  threads-database:
