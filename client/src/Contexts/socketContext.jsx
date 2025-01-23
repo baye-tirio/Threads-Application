@@ -24,7 +24,7 @@ export const SocketProvider = ({ children }) => {
   // const chats = useRecoilValue(conversations);
   useEffect(() => {
     //io is a function that establishes a connection to the socket server .. typeshit we sent some data in the query object on top of that shit too shiii
-    const socketConnection = io("http://localhost:5900", {
+    const socketConnection = io("/", {
       query: {
         username: authUser?.username,
       },
