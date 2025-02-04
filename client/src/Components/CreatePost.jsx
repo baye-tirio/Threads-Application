@@ -140,7 +140,6 @@ export default function CreatePost() {
             color={useColorModeValue("black", "white")}
           >
             <FaPlus />
-            Post
           </Button>
         </DialogTrigger>
         <DialogContent>

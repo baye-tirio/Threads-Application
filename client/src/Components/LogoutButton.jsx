@@ -35,7 +35,6 @@ export default function LogoutButton() {
       {...buttonPosition}
     >
       <FiLogOut size={20} />
-      Logout
     </Button>
   );
 }
