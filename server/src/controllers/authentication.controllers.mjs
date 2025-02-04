@@ -72,3 +72,17 @@ export const logOut = (_, res, next) => {
     next(error);
   }
 };
+export const checkAuth = async (req, res, next) => {
+  try {
+    const user = await User.findById(req.userId);
+    if (!user) next(errorHandler(404, "User Not Found!"));
+    else {
+      res.status(200).json({
+        success: true,
+        user: { ...user._doc, password: null },
+      });
+    }
+  } catch (error) {
+    next(error);
+  }
+};

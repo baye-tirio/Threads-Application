@@ -18,7 +18,7 @@ export default defineConfig({
   server: {
     proxy: {
       "/api": {
-        target: "http://localhost:5900",
+        target: "https://threads-application-au35.onrender.com",
         secure: false,
         changeOrigin: true,
       },
